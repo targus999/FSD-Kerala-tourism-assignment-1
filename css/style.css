@@ -1,0 +1,75 @@
+*{                             /*  remove all default margin and padding */
+    padding: 0px;
+    margin: 0px;  
+    text-decoration: none;
+}
+
+
+html {                          /*  to give smooth scrolling*/
+    scroll-behavior: smooth;
+  }
+
+
+.nav-link{
+   font-size: larger; 
+   color: white;
+    
+}
+
+#myVideo {                  /*  video properties */
+    position: top;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+}
+ 
+.navbarhov:hover {                    /*  make invisible navbar visible on hover */
+    transition-duration: 400ms;
+    background-color: rgb(52, 58, 64);
+    
+}
+
+.nav-link:hover{                    /*  set hover color on navbar buttons*/
+    color:rgb(120, 50, 200);
+}
+
+.navbar{                       /*  set nav bar height */
+    height: 11%;
+}
+
+.heading{                       /*  class for heading formats */
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+.mm{                              /*  Align middle */
+    vertical-align:middle;
+}
+
+
+.darker{                          /*  set footer as a darker color */
+    background-color: rgb(24, 26, 27) ;
+}
+
+
+.bord{                              /* class to border while arranging  */
+border: 1px solid rgb(3, 3, 3);   
+}
+
+
+.center{                              /* class to center items  */
+    text-align: center;
+}
+
+ .card:hover:hover {               /* to give zoom animation */
+    transform: scale(1.09);
+}
+.mar-t{                            /* to give extra margin */
+    margin-top: 6%;
+}
+ 
+.mar-l{
+    margin-left: 33%;
+}
