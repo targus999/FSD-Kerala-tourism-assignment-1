@@ -1,14 +1,15 @@
-let email = document.getElementById("email");
 let pwd = document.getElementById("pass");
 let phone = document.getElementById("phone");    
     
 
 function validate(){
+    let email = document.getElementById("email");
     if(email.value=="" || pwd.value==""){
         alert("Fields cannot be empty.");
         return false;
     }
     else{
+        let pho= /^([0-9]{3})([\.\- ])([0-9]{3})([\.\- ])([0-9]{4})$/;
         let exp = /^([A-Za-z0-9\.\-]+)@([A-Za-z0-9\-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
         if(exp.test(email.value)){
             console.log("correct");
@@ -21,14 +22,15 @@ function validate(){
     }
 }
 function validate1(){
-    if(email.value=="" || pwd.value=="" || phone.value== "" ){
+    let email = document.getElementById("email");
+    if(email.value=="" || pwd.value=="" || phone.value=="" ){
         alert("Fields cannot be empty.");
         return false;
     }
     else{
         let pho= /^([0-9]{3})([\.\- ])([0-9]{3})([\.\- ])([0-9]{4})$/;
-        let exp = /^([A-Za-z0-9\.\-]+)@([A-Za-z0-9\-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
-        if(exp.test(email.value) && pho.test(phone)){
+        let exp1 = /^([A-Za-z0-9\.\-]+)@([A-Za-z0-9\-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+        if(exp1.test(email.value) && pho.test(phone.value)){
             console.log("correct");
             return true;
         }
